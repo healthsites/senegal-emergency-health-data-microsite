@@ -9,6 +9,8 @@ tags:
   - HOTOSM microgrant
   - GIS
   - healthsites
+categories:
+  - Funding
 ---
 Earlier in 2020 HOTOSM announced their Microgrant Call. We jumped at the opportunity to bring various members of our extended community together to submit a proposal.
 
