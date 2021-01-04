@@ -10,6 +10,8 @@ tags:
   - Microgrant HOTOSM
   - GIS
   - établissements de santé
+categories:
+  - Funding
 ---
 Plus tôt en 2020, HOTOSM a annoncé son appel de microgrant. Nous avons sauté sur l'occasion pour réunir divers membres de notre communauté élargie afin de soumettre une proposition.
 
