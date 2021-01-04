@@ -31,4 +31,17 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "collaborators"
+    label: "Collaborator"
+    folder: 'content/collaborators'
+    identifier_field: name
+    create: true
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: false, media_library: { config: { multiple: false }}}
+      - { label: 'Homepage', name: 'homepage', widget: 'string', required: false }
+      - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+      - { label: 'LinkedIn', name: 'linkedin', widget: 'string', required: false }
+      - { label: 'Visible', name: 'visible', widget: 'boolean', default: true }
 
