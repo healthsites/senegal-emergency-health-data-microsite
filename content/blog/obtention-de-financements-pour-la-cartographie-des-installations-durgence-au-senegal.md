@@ -6,6 +6,9 @@ title: Obtention de financements pour la cartographie des installations durgence
 date: 2020-07-08T10:24:22.275Z
 description: Microgrant HOTOSM décerné
 thumbnail: /img/post1.png
+tags:
+  - GIS
+  - healthsites
 ---
 Plus tôt en 2020, HOTOSM a annoncé son appel de microgrant. Nous avons sauté sur l'occasion pour réunir divers membres de notre communauté élargie afin de soumettre une proposition.
 
