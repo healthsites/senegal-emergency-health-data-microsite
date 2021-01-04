@@ -19,8 +19,10 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', media_library: { config: { multiple: true }}}
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['news'] }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
   - name: "pages"
-    label: "Page  "
+    label: "Page"
     folder: 'content/pages'
     create: true
     fields:
