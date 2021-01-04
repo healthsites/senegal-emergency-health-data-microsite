@@ -31,3 +31,13 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', media_library: { config: { multiple: true }}}
+  - name: "pages"
+    label: "Pages"
+    folder: 'content/pages'
+    create: true
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "en", "fr" ] }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
