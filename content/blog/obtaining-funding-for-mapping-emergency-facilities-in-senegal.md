@@ -5,6 +5,10 @@ title: Obtaining funding for mapping emergency facilities in Senegal
 date: 2020-07-08T09:54:24.118Z
 description: HOTOSM Microgrant awarded
 thumbnail: /img/post1.png
+tags:
+  - HOTOSM microgrant
+  - GIS
+  - healthsites
 ---
 Earlier in 2020 HOTOSM announced their Microgrant Call. We jumped at the opportunity to bring various members of our extended community together to submit a proposal.
 
