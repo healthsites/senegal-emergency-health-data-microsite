@@ -1,5 +1,6 @@
 ---
 language: en
+author: Anelda van der Walt
 title: Obtaining funding for mapping emergency facilities in Senegal
 date: 2020-07-08T09:54:24.118Z
 description: HOTOSM Microgrant awarded

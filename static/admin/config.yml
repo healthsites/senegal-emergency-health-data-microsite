@@ -11,32 +11,21 @@ collections:
     label: 'Blog'
     folder: 'content/blog'
     create: true
-    filter: { field: "language", value: "en" }
     fields:
       - { label: "Language", name: "language", widget: "select", options: ["en", "fr"] }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image', media_library: { config: { multiple: true }}}
-  - name: 'fr_blog'
-    label: 'Blog in French'
-    folder: 'content/blog'
-    create: true
-    filter: { field: "language", value: "fr" }
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: ["en", "fr"] }
+      - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', media_library: { config: { multiple: true }}}
   - name: "pages"
-    label: "Pages"
+    label: "Page  "
     folder: 'content/pages'
     create: true
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "en", "fr" ] }
+      - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -1,5 +1,6 @@
 ---
 language: fr
+author: Anelda van der Walt
 title: Obtention de financements pour la cartographie des installations durgence
   au Sénégal
 date: 2020-07-08T10:24:22.275Z
