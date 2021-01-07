@@ -9,7 +9,7 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/blog'
+    folder: 'content/posts'
     create: true
     fields:
       - { label: "Language", name: "language", widget: "select", options: ["en", "fr"] }
@@ -21,15 +21,15 @@ collections:
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', media_library: { config: { multiple: true }}}
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['news'] }
       - { label: 'Categories', name: 'categories', widget: 'list' }
-  - name: "pages"
-    label: "Page"
-    folder: 'content/pages'
-    create: true
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: [ "en", "fr" ] }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+#  - name: "pages"
+#    label: "Page"
+#    folder: 'content/pages'
+#    create: true
+#    fields:
+#      - { label: "Language", name: "language", widget: "select", options: [ "en", "fr" ] }
+#      - { label: 'Title', name: 'title', widget: 'string' }
+#      - { label: 'Description', name: 'description', widget: 'string' }
+#      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: "collaborators"
     label: "Collaborator"
     folder: 'content/collaborators'
