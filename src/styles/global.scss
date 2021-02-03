@@ -1,0 +1,89 @@
+@import "colors";
+
+@import "~typeface-raleway/index.css";
+@import "~typeface-ubuntu/index.css";
+
+$font-family-sans-serif: "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -10rem;
+    padding: 3rem 0 10rem;
+}
+
+.footer {
+    bottom: 0;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.container-fluid {
+    background: $bg;
+    color: $fg;
+}
+
+nav {
+    &.navbar {
+        .navbar-brand {
+            background: url("/assets/logo@2x.png") no-repeat;
+            background-size: auto 100%;
+            padding: 0 0 0 1.5em;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: $red;
+            &:active,&:hover {
+                color: $red;
+            }
+        }
+        .navbar-text {
+            svg {
+                background-size: contain;
+            }
+        }
+    }
+}
+
+.alt-container {
+    background: $altBg;
+    color: $altFg;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+
+    a {
+        color: $white;
+        &:hover {
+            color: darken($white, 5%);
+            text-decoration: none;
+        }
+    }
+}
+
+.hero-img {
+    background-image: url('/img/slider-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+
+    position: relative;
+
+    &:before {
+        content:"";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background:rgba(0,0,0,0.6);
+    }
+    & > .container {
+        color: $white;
+        z-index: 2;
+    }
+}

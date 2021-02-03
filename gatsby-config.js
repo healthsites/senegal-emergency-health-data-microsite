@@ -5,9 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Page Title'
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,6 +34,14 @@ module.exports = {
         prefixDefault: false,
         useLangKeyLayout: false,
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
     }
   ],
 }
