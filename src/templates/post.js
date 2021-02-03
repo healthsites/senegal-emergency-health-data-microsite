@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby";
-import {Container} from "react-bootstrap";
+import {Container, Jumbotron} from "react-bootstrap";
 
 import Layout from "../components/Layout";
 
@@ -10,11 +10,17 @@ export default function PostTemplate({ data }) {
 
     return (
         <Layout lang="en">
-            <Container fluid>
+
+            <Jumbotron fluid className="hero-img">
+                <Container className="d-block text-center hero">
+                    <h1>{frontmatter.title}</h1>
+                    <p>{frontmatter.description}</p>
+                </Container>
+            </Jumbotron>
+
+            <Container>
                 <div className="blog-post-container">
                     <div className="blog-post">
-                        <h1>{frontmatter.title}</h1>
-                        <h2>{frontmatter.description}</h2>
                         <p>{frontmatter.author}</p>
                         <div
                             className="blog-post-content"

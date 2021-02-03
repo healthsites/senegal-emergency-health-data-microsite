@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby";
+import {Container, Jumbotron} from "react-bootstrap";
+import Layout from "../components/Layout";
 
 export default function Blog({ data }) {
 
@@ -13,10 +15,17 @@ export default function Blog({ data }) {
     });
 
     return (
-        <>
-            <h1>Blog Posts 1</h1>
-            { posts }
-        </>
+        <Layout lang="fr">
+            <Jumbotron fluid className="hero-img">
+                <Container className="d-block text-center hero">
+                    <h1>BLOG</h1>
+                    <p>Learn more about our mappers, data, challenges, and lessons learned/</p>
+                </Container>
+            </Jumbotron>
+            <Container fluid>
+                { posts }
+            </Container>
+        </Layout>
     );
 }
 
