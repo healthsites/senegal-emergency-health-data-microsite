@@ -1,19 +1,50 @@
 import React from "react"
 import Layout from "../components/Layout";
 import {Container, Jumbotron} from "react-bootstrap";
+import Jumbo from "../components/Jumbo";
+import {graphql} from "gatsby";
 
-export default function Collaborators() {
+export default function Collaborators({ data, location }) {
+
+    const collaborators = data.allMarkdownRemark.edges.map(({ node: collaborator }) => {
+        if(collaborator.frontmatter.visible) {
+            return (
+                <div key={collaborator.id}>
+                    <h1>{collaborator.frontmatter.name}</h1>
+                    <p>{collaborator.frontmatter.homepage}</p>
+                    <p>{collaborator.frontmatter.twitter}</p>
+                </div>
+            )
+        }
+    });
+
     return (
         <Layout lang="en">
-            <Jumbotron fluid className="hero-img">
-                <Container className="d-block text-center hero">
-                    <h1>COLLABORATORS</h1>
-                    <p>The team responsible for the Senegal emergency health data project.</p>
-                </Container>
-            </Jumbotron>
+            <Jumbo title={"Collaborators"} description={"The team responsible for the Senegal emergency health data project"}></Jumbo>
             <Container fluid>
-                tbc
+                { collaborators }
             </Container>
         </Layout>
     );
 }
+
+export const query = graphql`
+{
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(collaborators)/.*\\\\.md$/"}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          name
+          thumbnail
+          homepage
+          twitter
+          visible
+        }
+      }
+    }
+  }
+}
+
+`

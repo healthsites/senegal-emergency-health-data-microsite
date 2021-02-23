@@ -1,17 +1,15 @@
 import React from "react"
 import {Container, Jumbotron} from "react-bootstrap";
 import Layout from "../components/Layout";
+import Jumbo from "../components/Jumbo";
 
 export default function Contact() {
 
     return (
         <Layout lang="en">
-            <Jumbotron fluid className="hero-img">
-                <Container className="d-block text-center hero">
-                    <h1>DROP US A NOTE</h1>
-                    <p>Get in touch to learn more about the project or request a similar project.</p>
-                </Container>
-            </Jumbotron>
+
+            <Jumbo title={"Drop us a note"} description={"Get in touch to learn more about the project or request a similar project."}></Jumbo>
+
             <Container fluid>
                 tbc
             </Container>

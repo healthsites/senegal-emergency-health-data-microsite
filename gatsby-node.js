@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             createPage({
-                path: 'post/' + (node.frontmatter.language !== 'en' ? node.frontmatter.language + '/' : '') + path.basename(node.fileAbsolutePath, '.md'),
+                path: 'blog/' + (node.frontmatter.language !== 'en' ? node.frontmatter.language + '/' : '') + path.basename(node.fileAbsolutePath, '.md'),
                 component: postTemplate,
                 context: {
                     pathRegex: '/' + path.basename(node.fileAbsolutePath) + '$/'

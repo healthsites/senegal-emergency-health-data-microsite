@@ -6,7 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Page Title'
+    title: 'Mapping Senegal Emergency Health Services',
+    description: 'Defining the scope and service provision capacities of Emergency hospital'
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
