@@ -11,7 +11,8 @@ export default function Contact() {
             <Jumbo title={"Drop us a note"} description={"Get in touch to learn more about the project or request a similar project."}></Jumbo>
 
             <Container fluid>
-                tbc
+                Hello
+
             </Container>
         </Layout>
     );
