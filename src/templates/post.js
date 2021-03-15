@@ -19,13 +19,26 @@ export default function PostTemplate({ data }) {
             </Jumbotron>
 
             <Container>
-                <div className="blog-post-container">
-                    <div className="blog-post">
-                        <p>{frontmatter.author}</p>
-                        <div
-                            className="blog-post-content"
-                            dangerouslySetInnerHTML={{ __html: html }}
-                        />
+                <div className="row">
+                    <div className="col-md-8">
+                        <div className="card flex-md-row mb-4 box-shadow h-md-250">
+                            <div className="card-body d-flex flex-column align-items-start">
+                                <div>
+                                    <div
+                                        className="blog-post-content"
+                                        dangerouslySetInnerHTML={{__html: html}}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+
+                            <h4>Tags</h4>
+                            <p className="text-success">{frontmatter.tags}</p>
+                            <h4>Author</h4>
+                            <p>{frontmatter.author}</p>
+
                     </div>
                 </div>
             </Container>
