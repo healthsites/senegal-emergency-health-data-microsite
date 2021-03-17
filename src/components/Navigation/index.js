@@ -17,6 +17,7 @@ export default function Navigation() {
                     <Nav as="li"><Link to="/" className="nav-link" activeClassName="active">Home</Link></Nav>
                     <Nav as="li"><Link to="/collaborators" className="nav-link" activeClassName="active">Collaborators</Link></Nav>
                     <Nav as="li"><Link to="/blog" className="nav-link" activeClassName="active">Blog</Link></Nav>
+                    <Nav as="li"><Link to="/data" className="nav-link" activeClassName="active">Data</Link></Nav>
                     <Nav as="li"><Link to="/contact" className="nav-link" activeClassName="active">Contact</Link></Nav>
                 </Nav>
             </Navbar.Collapse>
