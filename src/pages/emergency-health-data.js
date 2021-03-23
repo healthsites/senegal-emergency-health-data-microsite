@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout";
-import {Col, Container, Jumbotron, Row} from "react-bootstrap";
+import {Card, CardGroup, Col, Container, Jumbotron, Row} from "react-bootstrap";
 import {graphql} from "gatsby";
 import Jumbo from "../components/Jumbo";
 
@@ -40,6 +40,7 @@ export default function EmergencyHealthData({ data }) {
                   </Col>
               </Row>
 
+              edit
               <Row className="py-5">
                   <Col className="text-center">
                       <h3>Project overview</h3>
@@ -75,7 +76,6 @@ export default function EmergencyHealthData({ data }) {
                       <p>Senegal’s OpenStreetMap cartographers called hospitals to confirm available emergency services</p>
                   </Col>
               </Row>
-
           </Container>
       </Layout>
   );

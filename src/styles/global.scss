@@ -95,3 +95,11 @@ nav {
         z-index: 2;
     }
 }
+
+
+.big-number-wrapper {
+    margin: 0;
+    .big-number {
+        font-size: 8rem;
+    }
+}
