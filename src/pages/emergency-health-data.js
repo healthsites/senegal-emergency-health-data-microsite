@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout";
-import {Card, CardGroup, Col, Container, Jumbotron, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import {graphql} from "gatsby";
 import Jumbo from "../components/Jumbo";
 

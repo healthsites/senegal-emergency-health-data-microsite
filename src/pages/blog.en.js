@@ -3,7 +3,7 @@ import {graphql, Link} from "gatsby";
 import * as PropTypes from "prop-types";
 
 import Layout from '../components/Layout';
-import {Container, Jumbotron} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import * as path from "path";
 import Jumbo from "../components/Jumbo";
 

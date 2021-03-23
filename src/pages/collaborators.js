@@ -1,13 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout";
-import {Card, CardColumns, Container, Image} from "react-bootstrap";
+import {Card, CardColumns, Container} from "react-bootstrap";
 import Jumbo from "../components/Jumbo";
 import {graphql} from "gatsby";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLinkedin, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 import Link from "gatsby-link";
 import {faHome} from "@fortawesome/free-solid-svg-icons";
-import usePopperMarginModifiers from "react-bootstrap/usePopperMarginModifiers";
 
 export default function Collaborators({ data, location }) {
 

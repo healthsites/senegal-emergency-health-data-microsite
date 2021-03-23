@@ -1,11 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout";
-import {Card, CardGroup, Col, Container, Jumbotron, Row} from "react-bootstrap";
+import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
 import {graphql} from "gatsby";
 import Jumbo from "../components/Jumbo";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHospital, faPrescriptionBottleAlt, faUserMd} from "@fortawesome/free-solid-svg-icons";
-import {faClinicMedical} from "@fortawesome/free-solid-svg-icons";
+import {faClinicMedical, faHospital, faPrescriptionBottleAlt, faUserMd} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home({data}) {
 
