@@ -23,6 +23,7 @@ export default function Blog({ data, location }) {
             thumbnail = <img
                 className="card-img-right flex-auto d-none d-md-block img-thumbnail"
                 src={post.frontmatter.thumbnail}
+                alt="thumbnail"
             ></img>
         }
 

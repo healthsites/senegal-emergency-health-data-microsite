@@ -12,7 +12,6 @@ export default function Collaborators({ data, location }) {
 
     const collaborators = data.allMarkdownRemark.edges.map(({ node: collaborator }) => {
         if(collaborator.frontmatter.visible) {
-            //edit
 
             let linkedin = ''
 
@@ -41,12 +40,6 @@ export default function Collaborators({ data, location }) {
 
 
             return (
-                // <div key={collaborator.id}>
-                //     <h1>{collaborator.frontmatter.name}</h1>
-                //     <p>{collaborator.frontmatter.homepage}</p>
-                //     <p>{collaborator.frontmatter.twitter}</p>padding: 1rem 1.5rem;
-                // </div>
-
                 <Card>
                     <Card.Img src={collaborator.frontmatter.thumbnail} thumbnail/>
                     <Card.Body>
@@ -62,7 +55,10 @@ export default function Collaborators({ data, location }) {
                     </Card.Footer>
                 </Card>
             );
-            //finish
+        }
+        else
+        {
+            return ''
         }
     });
 

@@ -15,7 +15,7 @@ export default function Data({ data }) {
 
           <Container>
 
-<iframe src="https://andysouth.shinyapps.io/senegal_healthsites_collection" width="100%" height="800px"></iframe>
+              <iframe src="https://andysouth.shinyapps.io/senegal_healthsites_collection" width="100%" height="800px" title="andy"></iframe>
 
           </Container>
       </Layout>
