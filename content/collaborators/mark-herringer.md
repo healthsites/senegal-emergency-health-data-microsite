@@ -4,5 +4,5 @@ title: Director
 thumbnail: /img/mark-herringer.jpg
 homepage: https://healthsites.io/
 twitter: https://twitter.com/markherringer
-visible: false
+visible: true
 ---
